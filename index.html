@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for Lidiya</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Background hitam solid */
+            color: white; /* Teks putih default */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            text-shadow: 
+                0 0 5px #00f, /* Cahaya biru kecil */
+                0 0 10px #00f, 
+                0 0 20px #00f, 
+                0 0 40px #00f, /* Cahaya biru besar */
+                0 0 80px #00f;
+            animation: flicker 2s infinite; /* Animasi flicker */
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+                text-shadow: 
+                    0 0 5px #00f, 
+                    0 0 10px #00f, 
+                    0 0 20px #00f, 
+                    0 0 40px #00f, 
+                    0 0 80px #00f;
+            }
+            50% {
+                opacity: 0.8;
+                text-shadow: 
+                    0 0 3px #00f, 
+                    0 0 6px #00f, 
+                    0 0 12px #00f, 
+                    0 0 20px #00f, 
+                    0 0 60px #00f;
+            }
+            70% {
+                opacity: 0.6;
+                text-shadow: 
+                    0 0 1px #00f, 
+                    0 0 2px #00f, 
+                    0 0 4px #00f, 
+                    0 0 8px #00f, 
+                    0 0 16px #00f;
+            }
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF; /* Warna biru */
+            border: none;
+            border-radius: 25px; /* Membuat tombol cembung */
+            box-shadow: 0 0 15px #007BFF, 0 0 30px #007BFF, 0 0 45px #007BFF; /* Efek neon */
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: scale(1.1); /* Efek membesar saat hover */
+            box-shadow: 0 0 20px #007BFF, 0 0 40px #007BFF, 0 0 60px #007BFF; /* Cahaya lebih terang */
+        }
+
+        button:active {
+            transform: scale(0.95); /* Efek mengecil saat ditekan */
+            box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 30px #007BFF; /* Cahaya berkurang */
+        }
+    </style>
+</head>
+<body>
+    <h1>I HAVE SOMETHING FOR YOU LIDIYA SAYANGKU</h1>
+    <button onclick="goToNextPage()">Just Klik</button>
+
+    <script>
+        function goToNextPage() {
+            window.location.href = "html.html";
+        }
+    </script>
+</body>
+</html>
